@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Super Store – Get in Touch</title>
+  <meta name="description" content="Contact Super Store for inquiries, support, and feedback. We’re here to help you with your shopping needs.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style/contact.css">
+</head>
+<body>
+  <header id="top">
+    <h1>Contact Super Store</h1>
+  </header>
+  
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About Us</a> |
+    <a href="contact.html" class="active">Contact Us</a>
+  </nav>
+  
+  <section class="announcement">
+    <marquee>
+      📞 Have questions? Reach out to us – we’d love to hear from you!
+    </marquee>
+  </section>
+  
+  <!-- Floating social bar -->
+  <aside class="social-bar">
+    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+  </aside>
+  
+  <main id="middle">
+    <h2>Send Us a Message</h2>
+    <form id="contactForm" onsubmit="submitForm(event)">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label>Gender</label>
+      <div class="radio-group">
+        <div>
+          <input type="radio" id="male" name="gender" value="Male">
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" id="female" name="gender" value="Female">
+          <label for="female">Female</label>
+        </div>
+      </div>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+      <label>Would you like us to call you?</label>
+      <div class="radio-group">
+        <div>
+          <input type="radio" id="callYes" name="callback" value="Yes">
+          <label for="callYes">Yes</label>
+        </div>
+        <div>
+          <input type="radio" id="callNo" name="callback" value="No">
+          <label for="callNo">No</label>
+        </div>
+      </div>
+
+      <label for="address">Your Address</label>
+      <textarea id="address" name="address" rows="2" placeholder="Enter your address"></textarea>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="3" placeholder="Type your message here..." required></textarea>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+    <h3>Alternative Contact</h3>
+    <div class="social">
+      <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+    </div>
+    
+    <div class="gallery">
+      <img src="./images/12.png" alt="Product 1">
+      <img src="./images/13.png" alt="Product 2">
+      <img src="./images/14.png" alt="Product 3">
+      <img src="./images/15.png" alt="Product 4">
+      <img src="./images/16.png" alt="Product 5">
+    </div>
+  </main>
+  
+  <footer>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About Us</a> |
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="bottom-links">
+      <a href="#top">⬆ Back to Top</a> |
+      <a href="#middle">⬇ Middle of Page</a> |
+      &copy; 2025 Super Store Mall
+    </div>
+  </footer>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert("✅ Your message has been submitted! Thank you for contacting Super Store.");
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
